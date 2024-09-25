@@ -1,23 +1,51 @@
 <!DOCTYPE html>
+<html lang="ru">
 <html>
 <head>
-    <title>
-       Site_Table
-    </title>
+	<meta charset="utf-8">
+    <title>Teams</title>
 </head>
-
 	<body>
-		<p><a href="Site_Index.html"> Site_Index </a></p>
-		<p><a href="Site_main.html"> Site_main </a></p>
+		<p><a href="Site_Index.html">Site_Index</a></p>
+		<p><a href="Site_main.html">Site_main</a></p>
+		<details>
+			<summary>График</summary>
+			<form>
+				<legend>Значение по оси OX</legend>
+				<input type="radio" name="OX" value="first">Страна<br>
+				<input type="radio" name="OX" value="second">Год создание<br>
+			</form>
+			<form>
+				<legend>Результат</legend>
+				<input type="checkbox" name="res" value="maxWin">Максимальный выйигрыш<br>
+				<input type="checkbox" name="res" value="youngest">Самый молодой состав<br>
+				<input type="checkbox" name="res" value="WinKef">Самое большое отношение побед<br>
+			</form>
+		</details>
+		
+		<details>
+			<summary>Фильтр</summary>
+		</details>
+		
+		<details>
+			<summary>Сортировка</summary>
+		</details>
 		
 		<table border="1" cellspacing="0" cellpadding="5">
-	<tbody><tr><th>Название</th><th>Страна, Город</th><th>месяц|год</th><th>Победитель</th><th>Призовой фонд</th></tr>
-	
-	<tr align="justify"><td>Dreamhack Winter 2013</td><td>Swedan, Jönköping</td><td>Ноябрь 2013</td><td><img src="img/Teams/Fnatic.png" width="17">Fnatic</td><td>$250,000</td><</tr>
-	<tr align="justify"><td>EMS One Katowice 2014</td><td>Poland, Katowice</td><td>Март 2014</td><td><img src="img/Teams/Fnatic.png" width="17">Virtus.pro</td><td>$250,000</td><</tr>
-	<tr align="justify"><td>ESL One Cologne 2014</td><td>German, Cologne</td><td>Март 2014</td><td><img src="img/Teams/Fnatic.png" width="17">Ninjas in Pyjamas</td><td>$250,000</td><</tr>
-	
-</tbody></table>
+			<tbody>
+			<tr><th>Название</th><th>Страна</th><th>Год создание</th><th>Победы</th><th>Коэффициент побед</th><th>Выйгранно денег</th><th>Средний возраст</th></tr>
+			
+			<tr align="justify"><td align="center"><img title="NaVi" src="img/Teams/NAVI.png" width="30"></td><td>Евросоюз(микс)</td><td>2009</td><td>697</td><td>85%</td><td>$8,165,385</td><td>23.8</td></tr>
+			<tr align="justify"><td align="center"><img title="Vitality" src="img/Teams/Team_Vitality.png" width="30"></td><td>Евросоюз(микс)</td><td>2018</td><td>309</td><td>67%</td><td>$2,244,554</td><td>25.3</td></tr>
+			<tr align="justify"><td align="center"><img title="G2" src="img/Teams/G2.png" width="30"></td><td>Евросоюз(микс)</td><td>2015</td><td>535</td><td>56%</td><td>$2,936,376</td><td>25.8</td></tr>
+			<tr align="justify"><td align="center"><img title="Spirit" src="img/Teams/Spirit.png" width="30"></td><td>Россия</td><td>2016 </td><td>439</td><td>72.2%</td><td>$2,044,075</td><td>21.8</td></tr>
+			<tr align="justify"><td align="center"><img title="MOUZ" src="img/Teams/MOUZ.png" width="30"></td><td>Евросоюз(микс)</td><td>2002</td><td>640</td><td>53%</td><td>$3,247,012</td><td>21.0</td></tr>
+			<tr align="justify"><td align="center"><img title="Eternal Fire" src="img/Teams/EF.png" width="30"></td><td>Турция</td><td>2021</td><td>122</td><td>70.4%</td><td>$1,225,090</td><td>26.9</td></tr>
+			<tr align="justify"><td align="center"><img title="FaZe" src="img/Teams/FaZe.png" width="30"></td><td>Евросоюз(микс)</td><td>2010</td><td>568</td><td>61.1%</td><td>$6,138,850</td><td>27.0</td></tr>
+			<tr align="justify"><td align="center"><img title="Liquid" src="img/Teams/Liquid.png" width="30"></td><td>Микс</td><td>2000</td><td>598</td><td>72.2%</td><td>$3,922,788</td><td>25.3</td></tr>
+			<tr align="justify"><td align="center"><img title="Complexity" src="img/Teams/Complexity.png" width="30"></td><td>Америка</td><td>2003</td><td>358</td><td>50.0%</td><td>$1,604,916</td><td>25.1</td></tr>
+			</tbody>
+		</table>
 		
 		
 	</body>
